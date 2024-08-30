@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
-// Company:			BHEL - Strukton - ARM - Embedded
-// Engineer:		Vivek Adi, Chiranjit Patel (email: vivek.adishesha@gmail.com)
+// Company:			BHEL - Strukton - Intel
+// Engineer:		Vivek Adi, Chiranjit Patel (email: vivek.adishesha@gmail.com, chiranjitpatel08@gmail.com)
 //
 // Creation Date:	(c) 2022 BHEL Strukton ARM 
 // Design Name:		Signed adder and subtractor
@@ -14,7 +14,7 @@
 // Comments:
 //-----------------------------------------------------------------------------------------------------------------------------------------------------	
 
-module tt_um_signed_addsub_8 #(N = 8) (a, b, sign, res_signed);
+module signed_addsub_4 #(N = 4) (a, b, sign, res_signed);
 	input 	logic	[N-1:0]	a;
 	input 	logic	[N-1:0]	b;
 	input 	logic	[1:0]	sign;

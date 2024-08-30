@@ -3,8 +3,8 @@
 // Engineer:		Vivek Adi (email: vivek.adishesha@gmail.com)
 //
 // Creation Date:	(c) 2022 BHEL Strukton
-// Design Name:		Half Adder in Systemverilog
-// Module Name:		ha	- Behavioral
+// Design Name:		Full Adder in Systemverilog
+// Module Name:		fa	- Behavioral
 // Project Name:	Multiplier Basic Library
 // Target Devices:	Altera FPGA Cyclone II EP2C15AF484I8N / EP2C5T144C8N
 // Tool Versions:	Quartus 13.1 sp1
@@ -15,15 +15,19 @@
 //-----------------------------------------------------------------------------------------------------------------------------------------------------			
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-module ha (a, b, cout, sout);
-	input	a;
-	input	b;
-	output	cout;
-	output	sout;
+module fa (a, b, c, cout, sout);
+	input	logic	a;
+	input	logic	b;
+	input	logic	c;
+	output	logic	cout;
+	output	logic	sout;
 	
-	begin
-		sout	= a^b;
-		cout 	= a & b;
+	logic stage1;
+	
+	always_comb begin
+		stage1	= a^b;
+		sout	= stage1^c;
+		cout 	= (stage1 & c) | (a & b);
 	end
 	
 endmodule

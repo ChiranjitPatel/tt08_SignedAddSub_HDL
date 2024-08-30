@@ -3,9 +3,9 @@
 
 # defaults
 SIM ?= icarus
-TOPLEVEL_LANG ?= verilog
+TOPLEVEL_LANG ?= SystemVerilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = tt_um_multiplier.v
+PROJECT_SOURCES = tt_um_sign_addsub.sv
 
 ifneq ($(GATES),yes)
 
@@ -32,7 +32,7 @@ VERILOG_SOURCES += $(PWD)/gate_level_netlist.v
 endif
 
 # Include the testbench sources:
-VERILOG_SOURCES += $(PWD)/tb.v
+VERILOG_SOURCES += $(PWD)/signed_addsub_tb.sv
 TOPLEVEL = tb
 
 # MODULE is the basename of the Python test file

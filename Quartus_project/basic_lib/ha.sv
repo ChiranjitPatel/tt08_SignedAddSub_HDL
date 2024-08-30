@@ -16,12 +16,12 @@
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 module ha (a, b, cout, sout);
-	input	a;
-	input	b;
-	output	cout;
-	output	sout;
+	input	logic	a;
+	input	logic	b;
+	output	logic	cout;
+	output	logic	sout;
 	
-	begin
+	always_comb begin
 		sout	= a^b;
 		cout 	= a & b;
 	end
