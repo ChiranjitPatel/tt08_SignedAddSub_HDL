@@ -37,6 +37,24 @@ module signed_addsub_tb;
         // Test case 5
         ui_in = 8'b10000101; uio_in = 2'b11; #10;
         $display("%b %b %b", ui_in, uio_in, uo_out);
+		
+		ui_in = 8'b00100001; uio_in = 2'b01; #10;
+        $display("%b %b %b", ui_in, uio_in, uo_out);
+		
+		ui_in = 8'b00010010; uio_in = 2'b01; #10;
+        $display("%b %b %b", ui_in, uio_in, uo_out);
+		
+		ui_in = 8'b00110001; uio_in = 2'b10; #10;
+        $display("%b %b %b", ui_in, uio_in, uo_out);
+		
+		ui_in = 8'b00010011; uio_in = 2'b10; #10;
+        $display("%b %b %b", ui_in, uio_in, uo_out);
+		
+		ui_in = 8'b01000010; uio_in = 2'b11; #10;
+        $display("%b %b %b", ui_in, uio_in, uo_out);
+		
+		ui_in = 8'b01000010; uio_in = 2'b11; #10;
+        $display("%b %b %b", ui_in, uio_in, uo_out);
 
     end
 
