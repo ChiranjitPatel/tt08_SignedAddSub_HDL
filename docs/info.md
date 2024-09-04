@@ -25,7 +25,7 @@ Depending on the sign[1:0] bits, the circuit can perform the following operation
 |      11      |   -A - B     |
 +--------------+--------------+
 
-![preview](ckt.png)
+![](ckt.PNG)
 
 ## How to test
 
