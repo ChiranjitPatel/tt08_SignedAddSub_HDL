@@ -25,6 +25,8 @@ Depending on the sign[1:0] bits, the circuit can perform the following operation
 |      11      |   -A - B     |
 +--------------+--------------+
 
+![preview](ckt.png)
+
 ## How to test
 
 The signed_addsub_tb directory includes extensive tests for design.
