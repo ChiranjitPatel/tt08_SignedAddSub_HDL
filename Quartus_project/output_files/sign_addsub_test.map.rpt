@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sign_addsub_test
-Fri Aug 30 23:47:13 2024
+Wed Sep  4 22:16:08 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -44,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Aug 30 23:47:13 2024          ;
+; Analysis & Synthesis Status     ; Successful - Wed Sep  4 22:16:08 2024          ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                   ; sign_addsub_test                               ;
 ; Top-level Entity Name           ; tt_um_sign_addsub                              ;
@@ -282,7 +282,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Fri Aug 30 23:47:01 2024
+    Info: Processing started: Wed Sep  4 22:15:53 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sign_addsub_test -c sign_addsub_test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -295,7 +295,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file /github
     Info (12023): Found entity 1: tt_um_sign_addsub File: D:/Github/tt08_SignedAddSub_HDL/src/tt_um_sign_addsub.sv Line: 8
 Info (12127): Elaborating entity "tt_um_sign_addsub" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at tt_um_sign_addsub.sv(33): object "_unused" assigned a value but never read File: D:/Github/tt08_SignedAddSub_HDL/src/tt_um_sign_addsub.sv Line: 33
-Warning (10034): Output port "uio_out[1..0]" at tt_um_sign_addsub.sv(12) has no driver File: D:/Github/tt08_SignedAddSub_HDL/src/tt_um_sign_addsub.sv Line: 12
 Warning (12125): Using design file signed_addsub_4.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: signed_addsub_4 File: D:/Github/tt08_SignedAddSub_HDL/Quartus_project/signed_addsub_4.sv Line: 17
 Info (12128): Elaborating entity "signed_addsub_4" for hierarchy "signed_addsub_4:A1" File: D:/Github/tt08_SignedAddSub_HDL/src/tt_um_sign_addsub.sv Line: 24
@@ -339,10 +338,10 @@ Info (21057): Implemented 51 device resources after synthesis - the final resour
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 24 output pins
     Info (21061): Implemented 8 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 36 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
     Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Fri Aug 30 23:47:13 2024
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Processing ended: Wed Sep  4 22:16:08 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:28
 
 
